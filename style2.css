@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nabla', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black
+}
+
+#time{
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+
+
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+#time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: rgba(128, 128, 128, 0.689);
+    stroke-width: 4;
+    transform: translate(5px,5px);
+}
+
+
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+
+
+#time div{
+    position: absolute;
+    text-align:center ;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+#time .ap{
+    position: relative;
+    font: 1em;
+    transform: translateX(-20px);
+}
+
+.point{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.point::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr);
+    border-radius:50%;
+    box-shadow: 0 0 20px var(--clr) , 0 0 60px var(--clr);
+}
+
+
+#time div span {
+    font-size: 18px;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* ...............THE-END................. */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
